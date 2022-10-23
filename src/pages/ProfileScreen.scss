@@ -1,0 +1,148 @@
+.prfileScreen__body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 0.75rem;
+  margin: auto;
+  padding-top: 50px;
+  .header {
+    width: 100%;
+    display: flex;
+    font-size: 1.25rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 3px;
+  }
+  .content {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    display: flex;
+    .avatar {
+      height: 50px;
+      img {
+        height: 100%;
+      }
+    }
+    .details {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      .nameLanguage {
+        margin-left: 30px;
+        select {
+          background-color: black;
+          color: white;
+          padding: 3px;
+          transition: all 0.2s;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+        .userName {
+          width: 100%;
+          padding: 10px;
+          background-color: #666;
+        }
+      }
+      .gameHandle {
+        margin-top: 20px;
+        width: 100%;
+        font-size: 0.75rem;
+
+        padding-bottom: 20px;
+        border-bottom: 1px solid whitesmoke;
+        a {
+          color: white;
+        }
+        input {
+          width: 100%;
+          padding: 10px;
+          background-color: #666;
+          &::-webkit-input-placeholder {
+            color: white;
+          }
+        }
+      }
+      .marturitySettings {
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid whitesmoke;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.75rem;
+
+        .allMaturity {
+          padding: 10px;
+          background-color: #333;
+          width: 60%;
+          font-size: 0.75rem;
+          font-weight: bold;
+        }
+        button {
+          width: 20%;
+          background-color: #333;
+          color: white;
+          padding: 5px;
+          cursor: pointer;
+          transition: ease-out 0.3s;
+          &:hover {
+            border: 1px solid white;
+          }
+        }
+      }
+      .autoplayControls {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        div {
+          display: flex;
+          width: 100%;
+          margin: 5px 0;
+          font-size: 0.75rem;
+          input {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  .profileScreen__footer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 20px 0;
+    button {
+      padding: 5px;
+      margin-right: 10px;
+    }
+    .save {
+      background-color: white;
+      color: black;
+      transition: all 0.5s;
+      &:hover {
+        background-color: red;
+        color: white;
+      }
+    }
+    .cancel {
+      background: black;
+      color: #666;
+      border: 1px solid #666;
+      &:hover {
+        color: white;
+        border: 1px solid white;
+      }
+    }
+    .signOut {
+      background-color: red;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: white;
+        border: 1px solid white;
+      }
+    }
+  }
+}

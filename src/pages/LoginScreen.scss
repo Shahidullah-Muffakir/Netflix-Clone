@@ -1,0 +1,78 @@
+.loginScreen {
+  //   background-color: white;
+  height: 100vh;
+  width: 100%;
+  .loginScreen__nav {
+    display: flex;
+    // position: fixed;
+    top: 0;
+    justify-content: space-between;
+    padding: 5px;
+    height: 2.875rem;
+    button {
+      background-color: red;
+      height: 2.1875rem;
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: white;
+      border: none;
+    }
+  }
+  .loginScreen__body {
+    padding: 0 7%;
+
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: 100vh;
+
+    h1 {
+      font-size: 3.125rem;
+    }
+    p {
+      font-size: 1.625rem;
+      font-weight: bold;
+    }
+    .inputAndButton {
+      margin-top: 0.625rem;
+      width: 80%;
+      // max-width: 600px;
+      // display: flex;
+      justify-content: center;
+      // flex-wrap: wrap;
+      @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      input {
+        height: 3rem;
+        // width: 80%;
+        outline: none;
+        border: none;
+        width: 100%;
+        // width: 400px;
+        // width: ;
+      }
+      button {
+        height: 3rem;
+        border: none;
+        cursor: pointer;
+        background-color: red;
+        // width: 100%;
+        outline: none;
+        justify-content: center;
+        margin-left: 40%;
+        margin-top: 1%;
+
+        @media screen and (max-width: 600px) {
+          margin-left: 35%;
+        }
+      }
+    }
+  }
+}

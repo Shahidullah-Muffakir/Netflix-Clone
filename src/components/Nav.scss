@@ -1,0 +1,24 @@
+.nav {
+  position: fixed; //positon fixed does not take place in the scree.
+  top: 0;
+
+  width: 100%;
+  height: 40px;
+  padding: 0.625rem 0.3125rem;
+  .nav__contents {
+    display: flex;
+    justify-content: space-between;
+    .nav__logo {
+      height: 20px;
+      cursor: pointer;
+    }
+    .nav__avatar {
+      height: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}
+.nav--black {
+  background-color: black;
+}
